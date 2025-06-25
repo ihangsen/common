@@ -139,7 +139,7 @@ func ZRevRank(key, member string) int64 {
 }
 
 func zRangeObj[T any](key string, start, end int64, rev bool) vec.Vec[T] {
-	args := make([]any, 0, 5)
+	args := make([]any, 0, 6)
 	if start < 0 {
 		args = append(args, "zrange", key, "-inf", end)
 	} else {
@@ -148,6 +148,7 @@ func zRangeObj[T any](key string, start, end int64, rev bool) vec.Vec[T] {
 	if rev {
 		args = append(args, "rev")
 	}
+	args = append(args, "byscore")
 	result := catch.Try1(client.Do(context.Background(), args...).Slice())
 	vector := vec.New[T](len(result))
 	for _, item := range result {
@@ -161,7 +162,7 @@ func zRangeObj[T any](key string, start, end int64, rev bool) vec.Vec[T] {
 }
 
 func zRangeByScoreObj[T any](key string, start, end int64, rev bool) vec.Vec[ZElement[T]] {
-	args := make([]any, 0, 6)
+	args := make([]any, 0, 7)
 	if start < 0 {
 		args = append(args, "zrange", key, "-inf", end)
 	} else {
@@ -204,24 +205,6 @@ func ZRangeByScoreObj[T any](key string, start, end int64) vec.Vec[ZElement[T]] 
 }
 
 func zRange(key string, start, end int64, rev bool) vec.Vec[string] {
-	args := make([]any, 0, 5)
-	if start < 0 {
-		args = append(args, "zrange", key, "-inf", end)
-	} else {
-		args = append(args, "zrange", key, start, end)
-	}
-	if rev {
-		args = append(args, "rev")
-	}
-	result := catch.Try1(client.Do(context.Background(), args...).Slice())
-	vector := vec.New[string](len(result))
-	for _, item := range result {
-		vector.Append(item.(string))
-	}
-	return vector
-}
-
-func zRangeByScore(key string, start, end int64, rev bool) vec.Vec[ZElement[string]] {
 	args := make([]any, 0, 6)
 	if start < 0 {
 		args = append(args, "zrange", key, "-inf", end)
@@ -231,8 +214,27 @@ func zRangeByScore(key string, start, end int64, rev bool) vec.Vec[ZElement[stri
 	if rev {
 		args = append(args, "rev")
 	}
+	args = append(args, "byscore")
+	result := catch.Try1(client.Do(context.Background(), args...).Slice())
+	vector := vec.New[string](len(result))
+	for _, item := range result {
+		vector.Append(item.(string))
+	}
+	return vector
+}
 
-	args = append(args, "withscores")
+func zRangeByScore(key string, start, end int64, rev bool) vec.Vec[ZElement[string]] {
+	args := make([]any, 0, 7)
+	if start < 0 {
+		args = append(args, "zrange", key, "-inf", end)
+	} else {
+		args = append(args, "zrange", key, start, end)
+	}
+	if rev {
+		args = append(args, "rev")
+	}
+
+	args = append(args, "withscores", "byscore")
 	result := catch.Try1(client.Do(context.Background(), args...).Slice())
 	vector := vec.New[ZElement[string]](len(result))
 	for _, item := range result {
