@@ -127,7 +127,7 @@ func ZRemRangeByRank(key string, start, stop int64) {
 // ZScore 获取元素的分数
 func ZScore[T types.Number | string](key string, member T) option.Opt[float64] {
 	result, err := client.Do(context.Background(), "zscore", key, member).Result()
-	if try(err) {
+	if !try(err) {
 		return option.None[float64]()
 	}
 	return option.Some(result.(float64))
