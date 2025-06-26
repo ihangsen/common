@@ -19,7 +19,7 @@ func XAck(key, group string, ids vec.Vec[string]) {
 	for _, id := range ids {
 		args = append(args, id)
 	}
-	catch.Try(client.Do(context.Background(), args).Err())
+	catch.Try(client.Do(context.Background(), args...).Err())
 }
 
 // XClaim 重新将消息转给指定消费者处理,只返回ID
@@ -46,7 +46,7 @@ func XDel(key string, ids vec.Vec[string]) {
 	for _, id := range ids {
 		args = append(args, id)
 	}
-	catch.Try(client.Do(context.Background(), args).Err())
+	catch.Try(client.Do(context.Background(), args...).Err())
 }
 
 func XGroupCreate(key, group string) {
