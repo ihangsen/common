@@ -7,7 +7,7 @@ import (
 )
 
 func TestId(f *testing.T) {
-	merge := id.Merge(255, 100000000)
+	merge := id.Merge(1, 1)
 	fmt.Println(merge)
 	index, i := id.Split(merge)
 	fmt.Println(index, i)

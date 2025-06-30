@@ -7,11 +7,11 @@ import (
 )
 
 func Merge(index uint8, id uint64) uint64 {
-	return id + (uint64(index) << 56)
+	return id<<8 + uint64(index)
 }
 
 func Split(key uint64) (index uint8, id uint64) {
-	return uint8(key >> 56), key & 0xFFFFFFFFFFFFFF
+	return uint8(key & 0xFF), key >> 8
 }
 
 const (
