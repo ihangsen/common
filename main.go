@@ -22,6 +22,7 @@ import (
 	_ "github.com/ihangsen/common/src/utils/channel"
 	_ "github.com/ihangsen/common/src/utils/delay_task"
 	_ "github.com/ihangsen/common/src/utils/encipher"
+	_ "github.com/ihangsen/common/src/utils/id"
 	_ "github.com/ihangsen/common/src/utils/option"
 	_ "github.com/ihangsen/common/src/utils/pool"
 	_ "github.com/ihangsen/common/src/utils/promise"
