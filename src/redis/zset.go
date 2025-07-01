@@ -75,7 +75,7 @@ func ZDiff(keys vec.Vec[string]) vec.Vec[string] {
 
 // ZIncrBy 增加元素的分数
 func ZIncrBy[T any](key string, increment float64, member T) float64 {
-	return catch.Try1(client.Do(context.Background(), "zincrby", key, increment, member).Float64())
+	return catch.Try1(client.Do(context.Background(), "zincrby", key, increment, member).Result()).(float64)
 }
 
 // ZMScore 批量获取元素的分数
