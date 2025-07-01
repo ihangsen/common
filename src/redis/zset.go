@@ -138,17 +138,13 @@ func ZRevRank(key, member string) int64 {
 	return catch.Try1(client.Do(context.Background(), "zrevrank", key, member).Int64())
 }
 
-func zRangeObj[T any](key string, start, end int64, rev bool) vec.Vec[T] {
+func zRangeObj[T any](key string, start, end uint64, rev bool) vec.Vec[T] {
 	args := make([]any, 0, 6)
-	if start < 0 {
-		args = append(args, "zrange", key, "-inf", end)
-	} else {
-		args = append(args, "zrange", key, start, end)
-	}
+	args = append(args, "zrange", key, start, end)
 	if rev {
 		args = append(args, "rev")
 	}
-	args = append(args, "byscore")
+	args = append(args, "withscores")
 	result := catch.Try1(client.Do(context.Background(), args...).Slice())
 	vector := vec.New[T](len(result))
 	for _, item := range result {
@@ -188,11 +184,11 @@ func zRangeByScoreObj[T any](key string, start, end int64, rev bool) vec.Vec[ZEl
 	return vector
 }
 
-func ZRangeRevObj[T any](key string, start, end int64) vec.Vec[T] {
+func ZRangeRevObj[T any](key string, start, end uint64) vec.Vec[T] {
 	return zRangeObj[T](key, start, end, true)
 }
 
-func ZRangeObj[T any](key string, start, end int64) vec.Vec[T] {
+func ZRangeObj[T any](key string, start, end uint64) vec.Vec[T] {
 	return zRangeObj[T](key, start, end, false)
 }
 
@@ -204,17 +200,13 @@ func ZRangeByScoreObj[T any](key string, start, end int64) vec.Vec[ZElement[T]] 
 	return zRangeByScoreObj[T](key, start, end, false)
 }
 
-func zRange(key string, start, end int64, rev bool) vec.Vec[string] {
+func zRange(key string, start, end uint64, rev bool) vec.Vec[string] {
 	args := make([]any, 0, 6)
-	if start < 0 {
-		args = append(args, "zrange", key, "-inf", end)
-	} else {
-		args = append(args, "zrange", key, start, end)
-	}
+	args = append(args, "zrange", key, start, end)
 	if rev {
 		args = append(args, "rev")
 	}
-	args = append(args, "byscore")
+	args = append(args, "withscores")
 	result := catch.Try1(client.Do(context.Background(), args...).Slice())
 	vector := vec.New[string](len(result))
 	for _, item := range result {
@@ -247,10 +239,10 @@ func zRangeByScore(key string, start, end int64, rev bool) vec.Vec[ZElement[stri
 	return vector
 }
 
-func ZRange(key string, start, end int64) vec.Vec[string] {
+func ZRange(key string, start, end uint64) vec.Vec[string] {
 	return zRange(key, start, end, false)
 }
-func ZRangeRev(key string, start, end int64) vec.Vec[string] {
+func ZRangeRev(key string, start, end uint64) vec.Vec[string] {
 	return zRange(key, start, end, true)
 }
 func ZRangeByScore(key string, start, end int64) vec.Vec[ZElement[string]] {
