@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"github.com/bytedance/sonic"
 	"github.com/ihangsen/common/src/catch"
-	"github.com/ihangsen/common/src/log"
 	"io"
 	"net/http"
 )
@@ -20,7 +19,6 @@ func PostJson[T, P any](url string, params P, fn func(header http.Header)) *T {
 	}(body)
 	t := new(T)
 	bodyBytes := catch.Try1(io.ReadAll(body))
-	log.Zap.Infof("body:%s", string(bodyBytes))
 	catch.Try(sonic.Unmarshal(bodyBytes, t))
 	return t
 }
