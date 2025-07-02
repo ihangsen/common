@@ -113,23 +113,23 @@ func (o Opt[T]) MapOrElse(fn0 func(), fn1 func(t T)) {
 
 func (o Opt[T]) Or(fn func() Opt[T]) Opt[T] {
 	if o.IsSome() {
-		return fn()
+		return o
 	}
-	return o
+	return fn()
 }
 
 func (o Opt[T]) Else(fn func(t T) Opt[T]) Opt[T] {
 	if o.IsSome() {
-		return o
+		return fn(o.V)
 	}
-	return fn(o.V)
+	return o
 }
 
 func (o Opt[T]) OrElse(fn0 func() Opt[T], fn1 func(t T) Opt[T]) Opt[T] {
 	if o.IsSome() {
-		return fn0()
+		return fn1(o.V)
 	}
-	return fn1(o.V)
+	return fn0()
 }
 
 func (o Opt[T]) String() string {
