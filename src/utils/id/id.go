@@ -21,11 +21,11 @@ const (
 	length  = 6  // code最小长度
 )
 
-var baseMap = func() map[byte]int32 {
-	baseArr := []byte(base)         // 字符串进制转换为byte数组
-	baseRev := make(map[byte]int32) // 进制数据键值转换为map
+var baseMap = func() map[byte]uint64 {
+	baseArr := []byte(base)          // 字符串进制转换为byte数组
+	baseRev := make(map[byte]uint64) // 进制数据键值转换为map
 	for k, v := range baseArr {
-		baseRev[v] = int32(k)
+		baseRev[v] = uint64(k)
 	}
 	return baseRev
 }()
@@ -70,7 +70,7 @@ func ToId(code string) uint64 {
 			}
 			// pow 类型为 float64 类型转换太麻烦所以自己循环实现pow的功能
 			//res += float64(index) * math.Pow(float64(32)float64(2))
-			res += uint64(index) * b
+			res += index * b
 			r++
 		}
 	}
