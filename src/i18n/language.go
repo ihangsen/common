@@ -52,6 +52,7 @@ type content struct {
 	NonExistentInfo   string
 	OperationFailure  string
 	Executed          string
+	CreateErr         string
 	ParamErr          string
 	StatusErr         string
 	BalanceErr        string

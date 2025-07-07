@@ -37,6 +37,7 @@ var english = &content{
 	NonExistentInfo:   "Non-existent information",
 	OperationFailure:  "operation failure",
 	Executed:          "executed",
+	CreateErr:         "create error",
 	ParamErr:          "param error",
 	StatusErr:         "This state is not suitable for this operation",
 	BalanceErr:        "not sufficient funds",
