@@ -75,7 +75,7 @@ func (p Promise5[T0, T1, T2, T3, T4]) Await5() (result.Res[T0], result.Res[T1], 
 	return p.res0, p.res1, p.res2, p.res3, p.res4
 }
 
-func (p Promise5[T0, T1, T2, T3, T4]) TryAwait4() (T0, T1, T2, T3, T4) {
+func (p Promise5[T0, T1, T2, T3, T4]) TryAwait5() (T0, T1, T2, T3, T4) {
 	p.waiter.Wait()
 	return p.res0.Get(), p.res1.Get(), p.res2.Get(), p.res3.Get(), p.res4.Get()
 }
