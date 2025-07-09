@@ -189,8 +189,8 @@ func (c *Cache[T, V]) Get(key T) option.Opt[V] {
 		} else {
 			v.count++
 			pile.Fix(c.heap, v.index)
-			//return option.OptOf(v.value, ok)
-			return option.None[V]()
+			//return option.None[V]()
+			return option.OptOf(v.value, ok)
 		}
 	}
 	return option.None[V]()
@@ -221,8 +221,8 @@ func (c *Cache[T, V]) Gets(keys vec.Vec[T]) (vec.Vec[V], vec.Vec[T]) {
 		}
 	}
 	c.deletes(deletes0)
-	//return result, missedKeys
-	return vec.OfEmpty[V](), keys
+	//return vec.OfEmpty[V](), keys
+	return result, missedKeys
 }
 
 func (c *Cache[T, V]) Update(key T, fn func(v V) V) {

@@ -37,6 +37,7 @@ var chinese = &content{
 	NonExistentInfo:   "不存在得信息",
 	OperationFailure:  "操作失败",
 	Executed:          "已执行",
+	CreateErr:         "创建失败",
 	ParamErr:          "参数错误",
 	StatusErr:         "该状态不合适该操作",
 	BalanceErr:        "余额不足",
