@@ -23,10 +23,11 @@ func PostJson[T, P any](url string, params P, fn func(header http.Header)) *T {
 	return t
 }
 
-func PostFrom[T, P any](url string, params P) *T {
+func PostFrom[T, P any](url string, params P, fn func(header http.Header)) *T {
 	buffer := bytes.NewBuffer(catch.Try1(sonic.Marshal(params)))
 	request := catch.Try1(http.NewRequest(http.MethodPost, url, buffer))
 	request.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	fn(request.Header)
 	body := catch.Try1(http.DefaultClient.Do(request)).Body
 	defer func(body io.ReadCloser) {
 		_ = body.Close()
