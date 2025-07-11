@@ -43,12 +43,13 @@ func (d Dict[K, V]) Store(key K, value V) {
 	d[key] = value
 }
 
-func (d Dict[K, V]) LoadOrStore(key K, value V) option.Opt[V] {
+func (d Dict[K, V]) LoadOrStore(key K, value V) V {
 	v, b := d[key]
 	if !b {
 		d[key] = value
+		return value
 	}
-	return option.OptOf(v, b)
+	return v
 }
 
 func (d Dict[K, V]) Delete(key K) {
