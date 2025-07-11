@@ -4,10 +4,12 @@ import (
 	"context"
 	"github.com/bytedance/sonic"
 	"github.com/ihangsen/common/src/catch"
+	"github.com/ihangsen/common/src/collection/tuple"
 	"github.com/ihangsen/common/src/collection/vec"
 	"github.com/ihangsen/common/src/types"
 	"github.com/ihangsen/common/src/utils/option"
 	"github.com/ihangsen/common/src/utils/trans"
+	"github.com/redis/go-redis/v9"
 )
 
 type ZElement[T any] struct {
@@ -250,13 +252,31 @@ func zRangeByScore(key string, start, end int64, rev bool) vec.Vec[ZElement[stri
 func ZRange(key string, start, end uint64) vec.Vec[ZElement[string]] {
 	return zRange(key, start, end, false)
 }
+
 func ZRangeRev(key string, start, end uint64) vec.Vec[ZElement[string]] {
 	return zRange(key, start, end, true)
 }
+
 func ZRangeByScore(key string, start, end int64) vec.Vec[ZElement[string]] {
 	return zRangeByScore(key, start, end, false)
 }
 
 func ZRangeRevByScore(key string, start, end int64) vec.Vec[ZElement[string]] {
 	return zRangeByScore(key, start, end, true)
+}
+
+var (
+	scoreRankScript = redis.NewScript(`
+        local rank = redis.call("ZRANK", KEYS[1], ARGV[1])
+        local score = redis.call("ZSCORE", KEYS[1], ARGV[1])
+        return {rank, score}
+    `)
+)
+
+func ZScoreAndRank[T types.Number | string](key string, member T) option.Opt[tuple.T2[int64, float64]] {
+	slice := catch.Try1(scoreRankScript.Run(context.Background(), client, []string{key}, []any{member}).Slice())
+	if slice[0] != nil && slice[1] != nil {
+		return option.Some(tuple.T2Of(slice[0].(int64), trans.Str2F64(slice[1].(string))))
+	}
+	return option.None[tuple.T2[int64, float64]]()
 }
