@@ -23,6 +23,10 @@ func SyncOfEmpty[E any]() SyncVec[E] {
 	return SyncNew[E](0)
 }
 
+func (v *SyncVec[E]) ToVec() Vec[E] {
+	return v.v
+}
+
 func (v *SyncVec[E]) ForEach(fn func(E)) {
 	v.rw.RLock()
 	defer v.rw.RUnlock()
