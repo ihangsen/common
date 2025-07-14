@@ -3,10 +3,17 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
-        <entry key="AliSecret">
+        <entry key="ABUserPageVo">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/oss/oss.go" />
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/ab_user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AGiftWall">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/agift_wall.go" />
             </set>
           </value>
         </entry>
@@ -55,14 +62,14 @@
         <entry key="GDist">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/redis/geo.go" />
+              <option value="file://$PROJECT_DIR$/src/redis/geo.go" />
             </set>
           </value>
         </entry>
         <entry key="GPos">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/redis/geo.go" />
+              <option value="file://$PROJECT_DIR$/src/redis/geo.go" />
             </set>
           </value>
         </entry>
@@ -77,6 +84,34 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/utils/cache/cache.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LaborUnionAnchorDetailsVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/labor_union.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LaborUnionAnchorInfoVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/labor_union.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LaborUnionCache">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/labor_union.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LaborUnionPageVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/labor_union.go" />
             </set>
           </value>
         </entry>
@@ -98,13 +133,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/utils/option/option.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="OssConf">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/src/server/oss/oss.go" />
             </set>
           </value>
         </entry>
@@ -150,6 +178,13 @@
             </set>
           </value>
         </entry>
+        <entry key="Promise5">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/utils/promise/promise5.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Promises">
           <value>
             <set>
@@ -160,7 +195,7 @@
         <entry key="Redis">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/redis/init.go" />
+              <option value="file://$PROJECT_DIR$/src/redis/init.go" />
             </set>
           </value>
         </entry>
@@ -182,20 +217,6 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/dto/page.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="SmsConf">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/src/server/sms/sms.go" />
-            </set>
-          </value>
-        </entry>
-        <entry key="SmsTemplate">
-          <value>
-            <set>
-              <option value="file://$PROJECT_DIR$/src/server/sms/sms.go" />
             </set>
           </value>
         </entry>
@@ -283,10 +304,10 @@
             </set>
           </value>
         </entry>
-        <entry key="Task">
+        <entry key="UBUserPageVo">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/delay_task/delay_task.go" />
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/backstage/src/vo/ub_user.go" />
             </set>
           </value>
         </entry>
@@ -297,17 +318,24 @@
             </set>
           </value>
         </entry>
+        <entry key="VideoRecordInfoVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/video_reocrd.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="XMessage">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/redis/stream.go" />
+              <option value="file://$PROJECT_DIR$/src/redis/stream.go" />
             </set>
           </value>
         </entry>
         <entry key="ZElement">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/src/server/redis/zset.go" />
+              <option value="file://$PROJECT_DIR$/src/redis/zset.go" />
             </set>
           </value>
         </entry>
@@ -354,6 +382,13 @@
             </set>
           </value>
         </entry>
+        <entry key="pin5">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/utils/promise/promise5.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="pins">
           <value>
             <set>
@@ -375,7 +410,7 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750742217958" />
+              <option name="lastModified" value="1751252219511" />
             </ScannedPath>
           </value>
         </entry>
@@ -415,7 +450,7 @@
         <entry key="file://$PROJECT_DIR$/src/collection/dict/dict.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705604" />
+              <option name="lastModified" value="1752462936839" />
             </ScannedPath>
           </value>
         </entry>
@@ -487,7 +522,7 @@
         <entry key="file://$PROJECT_DIR$/src/collection/vec/vec.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705596" />
+              <option name="lastModified" value="1752462931638" />
             </ScannedPath>
           </value>
         </entry>
@@ -534,21 +569,21 @@
         <entry key="file://$PROJECT_DIR$/src/i18n/cn.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750672817525" />
+              <option name="lastModified" value="1751870245434" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/src/i18n/en.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750672817522" />
+              <option name="lastModified" value="1751871023639" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/src/i18n/language.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750672817520" />
+              <option name="lastModified" value="1751870992120" />
               <option name="schema">
                 <list>
                   <option value="content" />
@@ -568,6 +603,90 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1750741705557" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/bitmap.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938575" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/commands.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938579" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/geo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938583" />
+              <option name="schema">
+                <list>
+                  <option value="GPos" />
+                  <option value="GDist" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/hash.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938587" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938592" />
+              <option name="schema">
+                <list>
+                  <option value="Redis" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/script.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938597" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/stream.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750907472973" />
+              <option name="schema">
+                <list>
+                  <option value="XMessage" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/string.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1750756938611" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/redis/zset.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752220368796" />
+              <option name="schema">
+                <list>
+                  <option value="ZElement" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -602,128 +721,6 @@
               <option name="schema">
                 <list>
                   <option value="Res" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/delay_task/delay_task.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705496" />
-              <option name="schema">
-                <list>
-                  <option value="Task" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/oss/oss.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705492" />
-              <option name="schema">
-                <list>
-                  <option value="AliSecret" />
-                  <option value="OssConf" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/bitmap.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705503" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/commands.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705498" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/geo.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705510" />
-              <option name="schema">
-                <list>
-                  <option value="GPos" />
-                  <option value="GDist" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/hash.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705508" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/init.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705507" />
-              <option name="schema">
-                <list>
-                  <option value="Redis" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/script.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705501" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/stream.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705500" />
-              <option name="schema">
-                <list>
-                  <option value="XMessage" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/string.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705499" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/redis/zset.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705505" />
-              <option name="schema">
-                <list>
-                  <option value="ZElement" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/src/server/sms/sms.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1750741705494" />
-              <option name="schema">
-                <list>
-                  <option value="SmsConf" />
-                  <option value="SmsTemplate" />
                 </list>
               </option>
             </ScannedPath>
@@ -765,7 +762,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/cache/cache.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705570" />
+              <option name="lastModified" value="1751879439162" />
               <option name="schema">
                 <list>
                   <option value="Cache" />
@@ -804,10 +801,17 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/src/utils/id/id.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1751533420230" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/src/utils/option/option.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705572" />
+              <option name="lastModified" value="1751533420236" />
               <option name="schema">
                 <list>
                   <option value="Opt" />
@@ -895,6 +899,19 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/src/utils/promise/promise5.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1751871280135" />
+              <option name="schema">
+                <list>
+                  <option value="Promise5" />
+                  <option value="pin5" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/src/utils/promise/promises.go">
           <value>
             <ScannedPath>
@@ -932,7 +949,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/request/post.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705575" />
+              <option name="lastModified" value="1752217377147" />
             </ScannedPath>
           </value>
         </entry>
@@ -946,7 +963,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/time/time.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750742070690" />
+              <option name="lastModified" value="1751533363861" />
             </ScannedPath>
           </value>
         </entry>
@@ -1013,11 +1030,299 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/ab_user_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752458652521" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/ab_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752459255886" />
+              <option name="schema">
+                <list>
+                  <option value="ABUserPageVo" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/mysql/amuser.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736644" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/mysql/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736589" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/ease_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752398225125" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/labor_union_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736577" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/local_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752398753282" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/video_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397539801" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/server/cache/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736568" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/server/cache/middle_conf.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736574" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/server/cache/video_finish.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752456574438" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/server/local/local.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397539813" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/server/video_channel.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752394850538" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/mysql/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461241296" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/router/labor_union_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461262190" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/router/middle_user_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752458652528" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/agift_wall.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461594097" />
+              <option name="schema">
+                <list>
+                  <option value="AGiftWall" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/enums/aboperation_log/aboperation_log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752456777980" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/enums/uboperation_log/uboperation_log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752457279220" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399736583" />
+              <option name="schema">
+                <list>
+                  <option value="LaborUnionPageVo" />
+                  <option value="LaborUnionAnchorInfoVo" />
+                  <option value="LaborUnionAnchorDetailsVo" />
+                  <option value="LaborUnionCache" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/backstage/src/router/ub_user_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752458652537" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/backstage/src/vo/ub_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752459255864" />
+              <option name="schema">
+                <list>
+                  <option value="UBUserPageVo" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/abanner.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461383504" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/agift_wall.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461494948" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/agreeting.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461940372" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399600928" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/ugreeting.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752462860184" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/anchor_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752461566721" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/ease_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752398144791" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/labor_union_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399402542" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/local_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397643622" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/ugreeting_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752462051681" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/video_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397539768" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/server/cache/labor_union.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752399514485" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/server/local/local.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397643634" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/server/video_user/video_balance.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397539785" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/video_reocrd.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752397272755" />
+              <option name="schema">
+                <list>
+                  <option value="VideoRecordInfoVo" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
       <map>
-        <entry key="ali_secret" value="AliSecret" />
+        <entry key="a_gift_wall" value="AGiftWall" />
+        <entry key="ab_user_page_vo" value="ABUserPageVo" />
         <entry key="bit_map" value="BitMap" />
         <entry key="bytes_bit_map" value="BytesBitMap" />
         <entry key="cache" value="Cache" />
@@ -1030,29 +1335,32 @@
         <entry key="g_pos" value="GPos" />
         <entry key="id_page_dto" value="IdPageDto" />
         <entry key="item" value="Item" />
+        <entry key="labor_union_anchor_details_vo" value="LaborUnionAnchorDetailsVo" />
+        <entry key="labor_union_anchor_info_vo" value="LaborUnionAnchorInfoVo" />
+        <entry key="labor_union_cache" value="LaborUnionCache" />
+        <entry key="labor_union_page_vo" value="LaborUnionPageVo" />
         <entry key="nz_opt" value="NzOpt" />
         <entry key="ok" value="Ok" />
         <entry key="opt" value="Opt" />
-        <entry key="oss_conf" value="OssConf" />
         <entry key="page_dto" value="PageDto" />
         <entry key="pin" value="pin" />
         <entry key="pin2" value="pin2" />
         <entry key="pin3" value="pin3" />
         <entry key="pin4" value="pin4" />
+        <entry key="pin5" value="pin5" />
         <entry key="pins" value="pins" />
         <entry key="pool" value="Pool" />
         <entry key="promise" value="Promise" />
         <entry key="promise2" value="Promise2" />
         <entry key="promise3" value="Promise3" />
         <entry key="promise4" value="Promise4" />
+        <entry key="promise5" value="Promise5" />
         <entry key="promises" value="Promises" />
         <entry key="read_only" value="readOnly" />
         <entry key="redis" value="Redis" />
         <entry key="res" value="Res" />
         <entry key="search_dto" value="SearchDto" />
         <entry key="search_page_dto" value="SearchPageDto" />
-        <entry key="sms_conf" value="SmsConf" />
-        <entry key="sms_template" value="SmsTemplate" />
         <entry key="sync_dict" value="SyncDict" />
         <entry key="sync_set" value="SyncSet" />
         <entry key="sync_vec" value="SyncVec" />
@@ -1065,12 +1373,13 @@
         <entry key="t7" value="T7" />
         <entry key="t8" value="T8" />
         <entry key="t9" value="T9" />
-        <entry key="task" value="Task" />
+        <entry key="ub_user_page_vo" value="UBUserPageVo" />
         <entry key="unit" value="Unit" />
+        <entry key="video_record_info_vo" value="VideoRecordInfoVo" />
         <entry key="x_message" value="XMessage" />
         <entry key="z_element" value="ZElement" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1750741988787" />
+    <option name="lastTimeChecked" value="1752392522527" />
   </component>
 </project>

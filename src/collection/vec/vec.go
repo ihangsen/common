@@ -33,6 +33,10 @@ func (v Vec[E]) Empty() bool {
 	return len(v) == 0
 }
 
+func (v Vec[E]) NotEmpty() bool {
+	return len(v) > 0
+}
+
 func (v Vec[E]) Cap() int {
 	return cap(v)
 }

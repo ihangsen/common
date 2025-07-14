@@ -34,6 +34,10 @@ func (d Dict[K, V]) Empty() bool {
 	return d.Len() == 0
 }
 
+func (d Dict[K, V]) NotEmpty() bool {
+	return d.Len() > 0
+}
+
 func (d Dict[K, V]) Load(key K) option.Opt[V] {
 	v, b := d[key]
 	return option.OptOf(v, b)
