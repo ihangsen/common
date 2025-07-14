@@ -11,6 +11,7 @@ import (
 	_ "github.com/ihangsen/common/src/coroutine"
 	_ "github.com/ihangsen/common/src/dto"
 	_ "github.com/ihangsen/common/src/function"
+	_ "github.com/ihangsen/common/src/i18n"
 	_ "github.com/ihangsen/common/src/log"
 	_ "github.com/ihangsen/common/src/passwd"
 	_ "github.com/ihangsen/common/src/redis"
