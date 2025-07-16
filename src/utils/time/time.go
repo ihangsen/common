@@ -16,12 +16,14 @@ func EndDay(now time.Time) time.Time {
 
 // LastDay 上一天起始时间
 func LastDay(now time.Time) time.Time {
-	return now.AddDate(0, 0, -1)
+	lastDay := now.AddDate(0, 0, -1)
+	return time.Date(lastDay.Year(), lastDay.Month(), lastDay.Day(), 0, 0, 0, 0, now.Location())
 }
 
 // NextDay 第二天起始时间
 func NextDay(now time.Time) time.Time {
-	return now.AddDate(0, 0, 1)
+	nextDay := now.AddDate(0, 0, 1)
+	return time.Date(nextDay.Year(), nextDay.Month(), nextDay.Day(), 0, 0, 0, 0, now.Location())
 }
 
 // StartWeek 本周起始时间
@@ -77,15 +79,12 @@ func EndMonth(now time.Time) time.Time {
 	return firstDayOfNextMonth.AddDate(0, 0, -1)
 }
 
-// StartYear 本年起始时间
+// StartYear 返回本年的开始时间 (1月1日 00:00:00)
 func StartYear(now time.Time) time.Time {
 	return time.Date(now.Year(), time.January, 1, 0, 0, 0, 0, now.Location())
 }
 
-// EndYear 本年结束时间(最后一天的起始时间)
+// EndYear 返回本年的结束时间 (12月31日 00:00:00)
 func EndYear(now time.Time) time.Time {
-	// 获取下一年的第一天，然后减去一天，得到本年最后一天
-	nextYear := now.AddDate(1, 0, 0)
-	firstDayOfNextYear := time.Date(nextYear.Year(), time.January, 1, 0, 0, 0, 0, nextYear.Location())
-	return firstDayOfNextYear.AddDate(0, 0, -1)
+	return time.Date(now.Year(), time.December, 31, 0, 0, 0, 0, now.Location())
 }
