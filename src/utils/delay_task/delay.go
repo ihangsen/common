@@ -2,6 +2,7 @@ package delay_task
 
 import (
 	"github.com/ihangsen/common/src/collection/dict"
+	"github.com/ihangsen/common/src/log"
 	"time"
 )
 
@@ -13,7 +14,12 @@ var (
 func Add(delayTime time.Duration, fn func()) uint32 {
 	idInc++
 	fn0 := func() {
-		defer tasks.LoadAndDelete(idInc)
+		defer func() {
+			tasks.LoadAndDelete(idInc)
+			if err := recover(); err != nil {
+				log.Zap.Error(err)
+			}
+		}()
 		fn()
 	}
 	tasks.Store(idInc, time.AfterFunc(delayTime, fn0))
