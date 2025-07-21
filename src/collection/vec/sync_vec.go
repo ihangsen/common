@@ -134,13 +134,16 @@ func (v *SyncVec[E]) Delete(index int) {
 func (v *SyncVec[E]) DeleteOne(fn func(E) bool) {
 	v.rw.Lock()
 	defer v.rw.Unlock()
-	index := 0
+	index := -1
 	for index0, e := range v.v {
-		fn(e)
-		index = index0
-		break
+		if fn(e) {
+			index = index0
+			break
+		}
 	}
-	v.v = slices.Delete(v.v, index, index+1)
+	if index != -1 {
+		v.v = slices.Delete(v.v, index, index+1)
+	}
 }
 
 func (v *SyncVec[E]) DeleteRange(start, end int) {

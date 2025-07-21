@@ -3,6 +3,55 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
+        <entry key="AMUser">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/amuser.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AMVisitor">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/amvisitor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AgoraConf">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/mobile_common/src/server/agora/agora.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AliAppClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/pay/ali_app.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AnchorBasicInfoDto">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/dto/anchor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="AnchorEditInfoAuditDto">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/dto/anchor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="BasicUserVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="BitMap">
           <value>
             <set>
@@ -24,6 +73,27 @@
             </set>
           </value>
         </entry>
+        <entry key="ChatRoom">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/chat_room.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ChatRoomEventVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/msg/msg.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Data">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/msg.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Deque">
           <value>
             <set>
@@ -35,6 +105,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/collection/deque/deque.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="EaseConf">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/ease/ease.go" />
             </set>
           </value>
         </entry>
@@ -70,6 +147,34 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/utils/cache/cache.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LoginVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MineUser">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Msg">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/msg.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MsgData">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/msg.go" />
             </set>
           </value>
         </entry>
@@ -157,6 +262,13 @@
             </set>
           </value>
         </entry>
+        <entry key="RegisterDto">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/dto/anchor.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Res">
           <value>
             <set>
@@ -168,6 +280,7 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/dto/meilisearch.go" />
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/dto/anchor.go" />
             </set>
           </value>
         </entry>
@@ -262,10 +375,108 @@
             </set>
           </value>
         </entry>
+        <entry key="TransferVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UMUser">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/umuser.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UMUserCache">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UMUserOften">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UMUserOftenVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UMVisitor">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/umvisitor.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Unit">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/types/types.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VideoRecord">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/video_record.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Withdraw">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/withdraw.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WithdrawAccountBindVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WithdrawAccountTransferVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WithdrawOK">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/msg.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WithdrawSetMealTransferVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WithdrawTransferVo">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="WxAppClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/pay/wx_app.go" />
             </set>
           </value>
         </entry>
@@ -280,6 +491,14 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/redis/zset.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="content">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/i18n/language.go" />
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/i18n/language.go" />
             </set>
           </value>
         </entry>
@@ -337,6 +556,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/src/collection/dict/sync_dict.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="server">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../heartbeat_server/middle/src/conf/init.go" />
             </set>
           </value>
         </entry>
@@ -447,7 +673,7 @@
         <entry key="file://$PROJECT_DIR$/src/collection/vec/sync_vec.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1752478664095" />
+              <option name="lastModified" value="1753085655600" />
               <option name="schema">
                 <list>
                   <option value="SyncVec" />
@@ -500,6 +726,32 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1750741705480" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/i18n/cn.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752487779748" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/i18n/en.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752487779760" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/i18n/language.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752487779755" />
+              <option name="schema">
+                <list>
+                  <option value="content" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -694,7 +946,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/delay_task/delay.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705578" />
+              <option name="lastModified" value="1752633999751" />
             </ScannedPath>
           </value>
         </entry>
@@ -853,7 +1105,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/request/get.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1750741705576" />
+              <option name="lastModified" value="1753085471841" />
             </ScannedPath>
           </value>
         </entry>
@@ -861,6 +1113,13 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1752217377147" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/utils/request/put.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753085492183" />
             </ScannedPath>
           </value>
         </entry>
@@ -874,7 +1133,7 @@
         <entry key="file://$PROJECT_DIR$/src/utils/time/time.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1751533363861" />
+              <option name="lastModified" value="1752632759915" />
             </ScannedPath>
           </value>
         </entry>
@@ -941,31 +1200,764 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/main.go">
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/conf/dev.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1752486494004" />
+              <option name="lastModified" value="1752637779203" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/mysql/am_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752651808766" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/mysql/um_user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752656300506" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/mysql/withdraw.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752657915015" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/a_notice_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752655662868" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/anchor_punish_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752655671138" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/home_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752719853690" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/pay_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752658741206" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/router/withdraw_audit_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752658040186" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/day.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752636943206" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/pay/ali_app.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752657168095" />
+              <option name="schema">
+                <list>
+                  <option value="AliAppClient" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/pay/pay.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752656946491" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/pay/wx_app.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752658561942" />
+              <option name="schema">
+                <list>
+                  <option value="WxAppClient" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/server/rank.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752638003795" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/src/vo/pay.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752715724326" />
+              <option name="schema">
+                <list>
+                  <option value="WithdrawTransferVo" />
+                  <option value="WithdrawSetMealTransferVo" />
+                  <option value="WithdrawAccountTransferVo" />
+                  <option value="TransferVo" />
+                  <option value="WithdrawAccountBindVo" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/test/anchor_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752653583326" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/backstage/test/rank_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752637343848" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/conf/dev.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568446" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/conf/pro.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568605" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/conf/test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568410" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/dto/anchor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752746526956" />
+              <option name="schema">
+                <list>
+                  <option value="SearchDto" />
+                  <option value="RegisterDto" />
+                  <option value="AnchorBasicInfoDto" />
+                  <option value="AnchorEditInfoAuditDto" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/mysql/amuser.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752721811783" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/mysql/chat_room.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752736369318" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/agreeting_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752715853948" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/anchor_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753064810729" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/chat_room_rouer_v2.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753078368760" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/chat_room_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753062790869" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/friends_circle_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752722028872" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/home_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752720865685" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753078320296" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/local_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753078751155" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/rank_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752638332332" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/user_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568312" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/anchor/mobile/src/router/video_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753062304884" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732953963" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/conf/dev.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732937970" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/conf/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732885419" />
+              <option name="schema">
+                <list>
+                  <option value="server" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/conf/pro.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732937950" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/conf/test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732937976" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/mysql/anchor_platform.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732807860" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/middle/src/router/anchor_platform_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732853898" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/mobile_common/src/enums/status.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080638489" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/mobile_common/src/graph/anchor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080391409" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/mobile_common/src/graph/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080352518" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/mobile_common/src/server/agora/agora.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753085249762" />
+              <option name="schema">
+                <list>
+                  <option value="AgoraConf" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/amuser.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753064665628" />
+              <option name="schema">
+                <list>
+                  <option value="AMUser" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/amvisitor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752724121836" />
+              <option name="schema">
+                <list>
+                  <option value="AMVisitor" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/chat_room.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753063684430" />
+              <option name="schema">
+                <list>
+                  <option value="ChatRoom" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/enums/chat_room/chat_room.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753072742098" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/enums/video_record/video_record.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753062265475" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/umuser.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753064665622" />
+              <option name="schema">
+                <list>
+                  <option value="UMUser" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/umvisitor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752724121830" />
+              <option name="schema">
+                <list>
+                  <option value="UMVisitor" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/video_record.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753062304894" />
+              <option name="schema">
+                <list>
+                  <option value="VideoRecord" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/entity/withdraw.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752656499704" />
+              <option name="schema">
+                <list>
+                  <option value="Withdraw" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/i18n/cn.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080662090" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/i18n/en.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080682260" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/i18n/language.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080651718" />
+              <option name="schema">
+                <list>
+                  <option value="content" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/anchor_referrer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752636161614" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/ease/chatrooms.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753077589353" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/ease/ease.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753063447545" />
+              <option name="schema">
+                <list>
+                  <option value="EaseConf" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/ease/msg.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753073152034" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/meilisearch/anchor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732938130" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/meilisearch/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732938061" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/msg/msg.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753073169029" />
+              <option name="schema">
+                <list>
+                  <option value="ChatRoomEventVo" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/server/user_referrer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752636161620" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/server_common/src/vo/msg.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752657168102" />
+              <option name="schema">
+                <list>
+                  <option value="Msg" />
+                  <option value="MsgData" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/backstage/src/router/u_notice_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752654333099" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/backstage/src/server/day.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752636943214" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/conf/dev.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568548" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/conf/pro.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568479" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/conf/test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752717568575" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/recharge_set_meal.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753082883258" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/umuser.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753084215077" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/mysql/umvisitor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752732144164" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/anchor_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752660560596" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/chat_room_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752735889361" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/chat_room_router_v2.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753078454078" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/ease_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752742489972" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/friends_circle_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752734346661" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/home_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753080696115" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/init.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1752486494012" />
+              <option name="lastModified" value="1753077832043" />
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/test/fiber_test.go">
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/local_router.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1752486715408" />
+              <option name="lastModified" value="1753069221800" />
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/test/user_test.go">
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/login_router.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1752485965017" />
+              <option name="lastModified" value="1753084341351" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/mine_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752635967980" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/pay_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753082896927" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/rank_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752638332346" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/user_conf_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752659228837" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/user_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752748049609" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/router/video_router.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753062685403" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/server/local/local.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752635993186" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/server/money/money.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752733521120" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/src/vo/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753084291302" />
+              <option name="schema">
+                <list>
+                  <option value="LoginVo" />
+                  <option value="BasicUserVo" />
+                  <option value="UMUserOften" />
+                  <option value="UMUserOftenVo" />
+                  <option value="UMUserCache" />
+                  <option value="MineUser" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/test/ease_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1753069105962" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../heartbeat_server/user/mobile/test/router/user_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1752720433598" />
             </ScannedPath>
           </value>
         </entry>
@@ -973,17 +1965,33 @@
     </option>
     <option name="tableStructMapping">
       <map>
+        <entry key="agora_conf" value="AgoraConf" />
+        <entry key="ali_app_client" value="AliAppClient" />
+        <entry key="am_user" value="AMUser" />
+        <entry key="am_visitor" value="AMVisitor" />
+        <entry key="anchor_basic_info_dto" value="AnchorBasicInfoDto" />
+        <entry key="anchor_edit_info_audit_dto" value="AnchorEditInfoAuditDto" />
+        <entry key="basic_user_vo" value="BasicUserVo" />
         <entry key="bit_map" value="BitMap" />
         <entry key="bytes_bit_map" value="BytesBitMap" />
         <entry key="cache" value="Cache" />
+        <entry key="chat_room" value="ChatRoom" />
+        <entry key="chat_room_event_vo" value="ChatRoomEventVo" />
+        <entry key="content" value="content" />
+        <entry key="data" value="Data" />
         <entry key="deque" value="Deque" />
         <entry key="deque_pin" value="DequePin" />
+        <entry key="ease_conf" value="EaseConf" />
         <entry key="entry" value="entry" />
         <entry key="err" value="Err" />
         <entry key="g_dist" value="GDist" />
         <entry key="g_pos" value="GPos" />
         <entry key="id_page_dto" value="IdPageDto" />
         <entry key="item" value="Item" />
+        <entry key="login_vo" value="LoginVo" />
+        <entry key="mine_user" value="MineUser" />
+        <entry key="msg" value="Msg" />
+        <entry key="msg_data" value="MsgData" />
         <entry key="nz_opt" value="NzOpt" />
         <entry key="ok" value="Ok" />
         <entry key="opt" value="Opt" />
@@ -1003,9 +2011,11 @@
         <entry key="promises" value="Promises" />
         <entry key="read_only" value="readOnly" />
         <entry key="redis" value="Redis" />
+        <entry key="register_dto" value="RegisterDto" />
         <entry key="res" value="Res" />
         <entry key="search_dto" value="SearchDto" />
         <entry key="search_page_dto" value="SearchPageDto" />
+        <entry key="server" value="server" />
         <entry key="sync_dict" value="SyncDict" />
         <entry key="sync_set" value="SyncSet" />
         <entry key="sync_vec" value="SyncVec" />
@@ -1018,11 +2028,25 @@
         <entry key="t7" value="T7" />
         <entry key="t8" value="T8" />
         <entry key="t9" value="T9" />
+        <entry key="transfer_vo" value="TransferVo" />
+        <entry key="um_user" value="UMUser" />
+        <entry key="um_user_cache" value="UMUserCache" />
+        <entry key="um_user_often" value="UMUserOften" />
+        <entry key="um_user_often_vo" value="UMUserOftenVo" />
+        <entry key="um_visitor" value="UMVisitor" />
         <entry key="unit" value="Unit" />
+        <entry key="video_record" value="VideoRecord" />
+        <entry key="withdraw" value="Withdraw" />
+        <entry key="withdraw_account_bind_vo" value="WithdrawAccountBindVo" />
+        <entry key="withdraw_account_transfer_vo" value="WithdrawAccountTransferVo" />
+        <entry key="withdraw_ok" value="WithdrawOK" />
+        <entry key="withdraw_set_meal_transfer_vo" value="WithdrawSetMealTransferVo" />
+        <entry key="withdraw_transfer_vo" value="WithdrawTransferVo" />
+        <entry key="wx_app_client" value="WxAppClient" />
         <entry key="x_message" value="XMessage" />
         <entry key="z_element" value="ZElement" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1752484708691" />
+    <option name="lastTimeChecked" value="1752633513213" />
   </component>
 </project>

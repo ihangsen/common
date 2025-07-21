@@ -9,16 +9,6 @@ import (
 	"strings"
 )
 
-func Get0[T any](url string) *T {
-	body := catch.Try1(http.Get(url)).Body
-	defer func(body io.ReadCloser) {
-		_ = body.Close()
-	}(body)
-	t := new(T)
-	catch.Try(sonic.Unmarshal(catch.Try1(io.ReadAll(body)), t))
-	return t
-}
-
 func Get1[T any](url0 string, params dict.Dict[string, string]) *T {
 	builder := strings.Builder{}
 	builder.WriteString(url0)
@@ -42,5 +32,18 @@ func Get1[T any](url0 string, params dict.Dict[string, string]) *T {
 	}(body)
 	t := new(T)
 	catch.Try(sonic.Unmarshal(catch.Try1(io.ReadAll(body)), t))
+	return t
+}
+
+func Get0[T any](url string, fn func(header http.Header)) *T {
+	request := catch.Try1(http.NewRequest(http.MethodGet, url, nil))
+	fn(request.Header)
+	body := catch.Try1(http.DefaultClient.Do(request)).Body
+	defer func(body io.ReadCloser) {
+		_ = body.Close()
+	}(body)
+	t := new(T)
+	bodyBytes := catch.Try1(io.ReadAll(body))
+	catch.Try(sonic.Unmarshal(bodyBytes, t))
 	return t
 }
