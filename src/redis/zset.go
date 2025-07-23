@@ -265,13 +265,11 @@ func ZRangeRevByScore(key string, start, end int64) vec.Vec[ZElement[string]] {
 	return zRangeByScore(key, start, end, true)
 }
 
-var (
-	scoreRankScript = redis.NewScript(`
-        local rank = redis.call("ZRANK", KEYS[1], ARGV[1])
-        local score = redis.call("ZSCORE", KEYS[1], ARGV[1])
-        return {rank, score}
-    `)
-)
+var scoreRankScript = redis.NewScript(`
+	local rank = redis.call("ZRANK", KEYS[1], ARGV[1])
+	local score = redis.call("ZSCORE", KEYS[1], ARGV[1])
+	return {rank, score}
+`)
 
 func ZScoreAndRank[T types.Number | string](key string, member T) option.Opt[tuple.T2[int64, float64]] {
 	slice := catch.Try1(scoreRankScript.Run(context.Background(), client, []string{key}, []any{member}).Slice())
@@ -279,4 +277,35 @@ func ZScoreAndRank[T types.Number | string](key string, member T) option.Opt[tup
 		return option.Some(tuple.T2Of(slice[0].(int64), trans.Str2F64(slice[1].(string))))
 	}
 	return option.None[tuple.T2[int64, float64]]()
+}
+
+var batchZRemScript = redis.NewScript(`
+	local deleted = 0
+	for i = 1, #ARGV do
+		local removed = redis.call('ZREM', KEYS[i], ARGV[i])
+		deleted = deleted + removed
+	end
+	return deleted
+`)
+
+func ZBatchRem[T types.Number | string](t2s vec.Vec[tuple.T2[string, T]]) int {
+	keys := vec.New[string](t2s.Len())
+	argv := vec.New[any](t2s.Len())
+	t2s.ForEach(func(t2 tuple.T2[string, T]) {
+		keys.Append(t2.V0)
+		argv.Append(t2.V1)
+	})
+	resp := catch.Try1(batchZRemScript.Run(context.Background(), client, keys, argv...).Int())
+	return resp
+}
+
+func ZBatchRemObj[T any](t2s vec.Vec[tuple.T2[string, T]]) int {
+	keys := vec.New[string](t2s.Len())
+	argv := vec.New[any](t2s.Len())
+	t2s.ForEach(func(t2 tuple.T2[string, T]) {
+		keys.Append(t2.V0)
+		argv.Append(catch.Try1(sonic.Marshal(t2.V1)))
+	})
+	resp := catch.Try1(batchZRemScript.Run(context.Background(), client, keys, argv...).Int())
+	return resp
 }
