@@ -1,8 +1,10 @@
 package vec
 
 import (
+	"fmt"
 	"github.com/ihangsen/common/src/utils/option"
 	"slices"
+	"strings"
 )
 
 type Vec[E any] []E
@@ -108,4 +110,17 @@ func (v *Vec[E]) Clip() {
 
 func (v Vec[E]) Clone() Vec[E] {
 	return slices.Clone(v)
+}
+
+func (v Vec[E]) String() string {
+	var b strings.Builder
+	b.WriteByte('[')
+	for i := 0; i < len(v); i++ {
+		if i > 0 {
+			b.WriteString(", ")
+		}
+		b.WriteString(fmt.Sprintf("%v", v[i]))
+	}
+	b.WriteByte(']')
+	return b.String()
 }
