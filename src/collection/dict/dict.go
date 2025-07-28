@@ -98,7 +98,15 @@ func (d Dict[K, V]) Clear() {
 	clear(d)
 }
 
-func (d Dict[K, V]) KSort(fn func(K, K) bool) vec.Vec[tuple.T2[K, V]] {
+func (d Dict[K, V]) KSort(fn func(K, K) bool) vec.Vec[K] {
+	keys := d.Keys()
+	sort.Slice(keys, func(i, j int) bool {
+		return fn(keys[i], keys[j])
+	})
+	return keys
+}
+
+func (d Dict[K, V]) KSortT2(fn func(K, K) bool) vec.Vec[tuple.T2[K, V]] {
 	keys := d.Keys()
 	sort.Slice(keys, func(i, j int) bool {
 		return fn(keys[i], keys[j])
