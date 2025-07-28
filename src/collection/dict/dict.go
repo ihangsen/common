@@ -3,7 +3,6 @@ package dict
 import (
 	"github.com/ihangsen/common/src/collection/tuple"
 	"github.com/ihangsen/common/src/collection/vec"
-	"github.com/ihangsen/common/src/function"
 	"github.com/ihangsen/common/src/utils/option"
 	"sort"
 )
@@ -104,14 +103,4 @@ func (d Dict[K, V]) KSort(fn func(K, K) bool) vec.Vec[K] {
 		return fn(keys[i], keys[j])
 	})
 	return keys
-}
-
-func (d Dict[K, V]) KSortT2(fn func(K, K) bool) vec.Vec[tuple.T2[K, V]] {
-	keys := d.Keys()
-	sort.Slice(keys, func(i, j int) bool {
-		return fn(keys[i], keys[j])
-	})
-	return function.Map(keys, func(k K) tuple.T2[K, V] {
-		return tuple.T2Of(k, d[k])
-	})
 }
