@@ -8,12 +8,12 @@ import (
 )
 
 type User struct {
-	Name string
-	Age  int
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }
 
 func TestListObj(t *testing.T) {
-	redis.Init(&redis.Redis{
+	conf := &redis.Redis{
 		Addr:         "121.196.231.160:6379",
 		Username:     "",
 		Password:     "tTB9FcdLCCYK8jnB",
@@ -21,7 +21,8 @@ func TestListObj(t *testing.T) {
 		PoolSize:     10,
 		MinIdleConns: 1,
 		MaxIdleConns: 10,
-	})
+	}
+	redis.Init(conf)
 	key := "list_test"
 	redis.LPushObj(key, vec.Vec[User]{User{
 		Name: "1",
