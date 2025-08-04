@@ -17,7 +17,7 @@ var (
 
 const (
 	regexpUsername = "^1([3-9])\\d{9}$"
-	regexpPassword = "^[a-zA-Z\\d!@#$%^&*()_+={};':\"|,.<>?/]{8,16}$"
+	regexpPassword = "^[a-zA-Z\\d!@#$%^&*()_+={};':\"|,.<>?/]{7,16}$"
 )
 
 func Init() {
