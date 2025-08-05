@@ -20,3 +20,7 @@ return 1
 func Lua(script *redis.Script, keys []string, values []any) {
 	catch.Try(script.Run(context.Background(), client, keys, values).Err())
 }
+
+func Lua1[T any](script *redis.Script, keys []string, values []any) T {
+	return catch.Try1(script.Run(context.Background(), client, keys, values).Result()).(T)
+}
