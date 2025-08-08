@@ -3,8 +3,11 @@ package redis
 import (
 	"context"
 	"github.com/ihangsen/common/src/catch"
+	"github.com/ihangsen/common/src/collection/tuple"
+	"github.com/ihangsen/common/src/collection/vec"
 	"github.com/ihangsen/common/src/utils/option"
 	"github.com/ihangsen/common/src/utils/trans"
+	"github.com/redis/go-redis/v9"
 )
 
 func SetPx[T any](key string, value T, expire int64) {
@@ -53,4 +56,30 @@ func MGet2(key0, key1 string) (option.NzOpt[int64], option.NzOpt[string]) {
 		return t0, t1
 	}
 	return option.NzOptOfEmpty[int64](), option.NzOptOfEmpty[string]()
+}
+
+func MSet[T any](d map[string]T) {
+	catch.Try(client.MSet(context.Background(), d).Err())
+}
+
+var mSetPxScript = redis.NewScript(`
+	for i = 1, #KEYS do
+		local key = KEYS[i]
+		local value = ARGV[(i - 1) * 2 + 1]
+		local px = ARGV[(i - 1) * 2 + 2]
+		redis.call('SET', key, value, 'PX', px)
+	end
+	return 'OK'
+`)
+
+func MSetPX[T any](t3s vec.Vec[tuple.T3[string, T, int64]]) {
+	length := t3s.Len()
+	keys := vec.New[string](length)
+	argv := vec.New[any](length)
+	t3s.ForEach(func(t3 tuple.T3[string, T, int64]) {
+		keys.Append(t3.V0)
+		argv.Append(t3.V1)
+		argv.Append(t3.V2)
+	})
+	mSetPxScript.Run(context.Background(), client, keys, argv...)
 }
