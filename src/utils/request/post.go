@@ -2,10 +2,12 @@ package request
 
 import (
 	"bytes"
+	"fmt"
 	"github.com/bytedance/sonic"
 	"github.com/ihangsen/common/src/catch"
 	"io"
 	"net/http"
+	"net/url"
 )
 
 func PostJson[T, P any](url string, params P, fn func(header http.Header)) *T {
@@ -23,9 +25,16 @@ func PostJson[T, P any](url string, params P, fn func(header http.Header)) *T {
 	return t
 }
 
-func PostFrom[T, P any](url string, params P, fn func(header http.Header)) *T {
-	buffer := bytes.NewBuffer(catch.Try1(sonic.Marshal(params)))
-	request := catch.Try1(http.NewRequest(http.MethodPost, url, buffer))
+func PostFrom[T, P any](url0 string, params P, fn func(header http.Header)) *T {
+	values := url.Values{}
+	data := catch.Try1(sonic.Marshal(params))
+	var m map[string]any
+	_ = sonic.Unmarshal(data, &m)
+	for k, v := range m {
+		values.Set(k, fmt.Sprint(v))
+	}
+	buffer := bytes.NewBuffer([]byte(values.Encode()))
+	request := catch.Try1(http.NewRequest(http.MethodPost, url0, buffer))
 	request.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	fn(request.Header)
 	body := catch.Try1(http.DefaultClient.Do(request)).Body
